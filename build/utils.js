@@ -51,7 +51,7 @@ exports.cssLoaders = function (options) {
       return ExtractTextPlugin.extract({
         use: loaders,
         fallback: 'vue-style-loader',
-        publicPath: '../../'//为本地打包添加****************（新添加的属性）
+        publicPath: '../../'//为本地打包添加*********************（新添加的属性）
       })
     } else {
       return ['vue-style-loader'].concat(loaders)
