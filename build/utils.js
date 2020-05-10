@@ -25,7 +25,10 @@ exports.cssLoaders = function (options) {
   const postcssLoader = {
     loader: 'postcss-loader',
     options: {
-      sourceMap: options.sourceMap
+      sourceMap: options.sourceMap,
+      plugins: [
+        require('autoprefixer')()　　//***********因为在本地可以跑，上传git再克隆下来就不行了，要求加这个
+      ]
     }
   }
 
