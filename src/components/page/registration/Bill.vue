@@ -3,7 +3,7 @@
     <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item :to="{ path: '/main' }">首页</el-breadcrumb-item>
       <el-breadcrumb-item>挂号收费</el-breadcrumb-item>
-      <el-breadcrumb-item>发票</el-breadcrumb-item>
+      <el-breadcrumb-item>费用查询&发票</el-breadcrumb-item>
     </el-breadcrumb>
     <br />
     <br />
@@ -86,7 +86,13 @@ export default {
       } else {
         this.tableData = [
           {
-            records_num: 6000600
+            records_num: 6000600,
+            bill_num: 13445,
+            name: "李白",
+            idCardNum: "140227199908090090",
+            time: "2020-5-1",
+            price: 60,
+            state: "已缴费"
           }
         ];
       }

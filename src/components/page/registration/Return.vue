@@ -95,23 +95,36 @@ export default {
       } else {
         this.tableData = [
           {
-            records_num: 6000600
+            records_num: this.records_num,
+            name: "李白",
+            idCardNum: "140227199908090090",
+            itemsName: "双黄连",
+            price: 30,
+            num: 1,
+            state: "已缴费"
+          },
+          {
+            records_num: this.records_num,
+            name: "李白",
+            idCardNum: "140227199908090090",
+            itemsName: "板蓝根",
+            price: 30,
+            num: 1,
+            state: "已缴费"
           }
         ];
-        // "records_num":this.records_num
-        // this.tableData =
-        // this.sum = resp.data.code + "元";
       }
     },
 
     settle() {
-      // this.name = resp.data.data[0].name;
-      // this.idCard = resp.data.data[0].idCard;
       this.dialogVisible = true;
+      this.sum = 30;
+      this.name = "李白";
+      this.idCard = "140227199908090090";
+      this.returnItem = '双黄连'
     },
     sureSettle() {
       this.dialogVisible = false;
-      // this.search();
       this.$message.success("退费成功");
     },
     handleClose(done) {

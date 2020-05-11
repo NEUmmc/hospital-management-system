@@ -251,18 +251,6 @@ export default {
   },
   methods: {
     finish() {
-      // records_num: this.records_num,
-      // name: this.name,
-      // sex: this.sex,
-      // idCardNum: this.idCardNum,
-      // Birthday: this.Birthday,
-      // age: this.age,
-      // homeAddress: this.homeAddress,
-      // department_id: this.department_id,
-      // reg_level_id: this.reg_level_id,
-      // book: this.book,
-      // doctor_id: this.doctor_id,
-
       this.$message.success("挂号成功");
       this.reload();
     },

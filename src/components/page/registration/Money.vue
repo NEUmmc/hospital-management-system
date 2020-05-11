@@ -111,9 +111,29 @@ export default {
       if (this.records_num == "") {
         this.$message.warning("请先输入病历号再搜索");
       } else {
-        // "records_num":this.records_num
-        // this.tableData =
-        // this.sum = resp.data.code + "元";
+        (this.tableData = [
+          {
+            records_num: this.records_num,
+            name: "李白",
+            idCardNum: "140227199908090090",
+            itemsName: "板蓝根",
+            price: 30,
+            num: 1,
+            state: "未缴费"
+          },
+          {
+            records_num: this.records_num,
+            name: "李白",
+            idCardNum: "140227199908090090",
+            itemsName: "双黄连",
+            price: 30,
+            num: 1,
+            state: "未缴费"
+          }
+        ]),
+          (this.sum = 60),
+          (this.name = "李白"),
+          (this.idCard = "140227199908090090");
       }
     },
 
