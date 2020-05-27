@@ -1,39 +1,39 @@
 <template>
   <div id="app">
-    <router-view v-if="isRouterAlive"/>
+    <router-view v-if="isRouterAlive" />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
-    provide () {
+  name: "App",
+  provide() {
     return {
       reload: this.reload
-    }
+    };
   },
-  data () {
+  data() {
     return {
       isRouterAlive: true
-    }
+    };
   },
   methods: {
-    reload () {
-      this.isRouterAlive = false
-      this.$nextTick(function () {
-        this.isRouterAlive = true
-      })
+    reload() {
+      this.isRouterAlive = false;
+      this.$nextTick(function() {
+        this.isRouterAlive = true;
+      });
     }
   }
-}
+};
 </script>
 
 <style>
-body{
+body {
   margin: 0;
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
