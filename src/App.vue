@@ -31,6 +31,7 @@ export default {
 <style>
 body {
   margin: 0;
+  overflow-y: hidden;
 }
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
